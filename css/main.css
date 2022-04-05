@@ -1,0 +1,131 @@
+:root {
+  /* 1REM = 1PX */
+  font-size: 6.25%;
+
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-size: 16rem;
+}
+
+/* RESET STYLES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/* END OF RESET STYLES */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section {
+  width: 60%;
+  padding: 20rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f4f4f4;
+  border-radius: 25rem;
+}
+
+.paragraph {
+  padding: 10rem;
+}
+
+.colorScheme {
+  width: 100%;
+  padding: 20rem;
+  text-align: left;
+}
+
+.form-radio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-radio label {
+  padding: 5rem 10rem;
+}
+
+.light .main,
+.title_h1 .first-section {
+  color: #000;
+  background-color: rgba(227, 227, 227, 0.7);
+  background-image: url(../img/001.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.light .first-section {
+  background-color: rgba(255, 250, 232, 0.95);
+}
+
+.dark .main,
+.title_h1 .first-section {
+  color: rgb(247, 247, 247);
+  background-color: rgb(40, 40, 40);
+  background-image: url(../img/002.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.dark .first-section {
+  background-color: rgba(79, 79, 79, 0.9);
+}
+
+.cute .main,
+.title_h1 .first-section {
+  color: #fff;
+  background-color: pink;
+  background-color: rgba(144, 24, 150, 0.9);
+  background-image: url(../img/003.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.cute .first-section {
+  background-color: rgba(144, 24, 150, 0.9);
+}
